@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <style>
+            body {
+              margin: 0;
+              padding: 0;
+            }
+            
+            h2, p {
+              margin: 10px;
+            }
+            
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #2a3de9;
+            }
+            
+            ul li {
+              float: left;
+            }
+            
+            ul li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            ul li a:hover {
+              background-color: #316dee;
+            }
+
+            .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "menu content"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            gap: 3px;
+            background-color: dodgerblue;
+            padding: 5px;
+            }
+            .container div {
+            background-color: white;
+            padding: 10px;
+            }
+            .container div.header {
+            grid-area: header;
+            text-align: center;
+            }
+            .container div.menu {
+            grid-area: menu;
+            }
+            .container div.content {
+            grid-area: content;
+            }
+            .container div.footer {
+            grid-area: footer;
+            text-align: center;  
+            }
+            .ull{
+              color: brown;
+              background-color: white;
+              list-style-type: circle;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="company_culture.html">Company Culture</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="empplyee_benefits.html">Employee Benefits</a></li>
+            <li><a href="training_development.html">Training and Development</a></li>
+        </ul>
+        
+        <div class="container">
+            <div class="header"><h2>CAREERS</h2></div>
+            <div class="menu"><h3>Vacancies</h3><p>
+              <ol class="ull">
+              <h3>
+              <li>Lecturer - Business Management and Globalization</li>
+              <li>HR Admin - Human Resources</li>
+              <li>Driver (x2) - Well licenced driver with atleast 2 years of experience</li>
+              </h3>
+            </ol>  
+            </p>
+          </div>
+            <div class="content"><img src="images/career.jpg" alt="" width="100%" height="100%"></div>
+           
+        </div>
+        <img src="images/campus.jpg" alt="" width="100%" height="100%">
+        
+    </body>
+</html>
